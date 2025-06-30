@@ -2,7 +2,7 @@
 
 Recipe Generator
 We would like to build a website that can automatically generate recipes with images for any given dish name. Here is a sample of how the website should look. In order to properly show the recie on the page, we need to build a backend that can generate the following JSON for any given dish name:
-
+`
 {
     name:  <the name of the dish>,
     image: <base64 encoded png>,
@@ -16,7 +16,7 @@ We would like to build a website that can automatically generate recipes with im
         {<name of the cooking part>: [list of instructions]},
     ],
 }
-
+`
 To make our website to be general enough, we will make use of Vertex AI for generating the recipe instructions, and Imagen 3 for generating the illustrative images. Both are from Google Cloud Platform (GCP).
 
 You are asked to setup the following publicly available endpoints either on PythonAnywhere or on GCP (e.g. using Cloud Run/Functions):
